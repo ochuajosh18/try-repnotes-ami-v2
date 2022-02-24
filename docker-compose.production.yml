@@ -1,0 +1,13 @@
+version: '3'
+services:
+  repnotes-ami-v2:
+    container_name: production-repnotes-ami-v2
+    build:
+      context: .
+      dockerfile: Dockerfile.production
+    image: opsenterprise/production-repnotes-ami-v2
+    volumes:
+       - ./nginx/default.conf:/etc/nginx/conf.d/repnotes-ami-v2/default.conf
+    restart: always
+    ports:
+      - '127.0.0.1:3034:80'

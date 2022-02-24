@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input, a{
+  font-size: 12px !important;
+  color: '#272B75' !important;
+}
+
+span {
+  font-size: 12px !important;
+}
+
+.root {
+  display: flex;
+  flex-grow: 1
+}
+
+.paper-button {
+  text-transform: none;
+}
+
+.repnotes-content {
+  width: 100% !important; 
+  z-index: 1201 !important;
+  background-color: #fff;
+  margin-top: 60px;
+  padding: 10px 30px; 
+  min-height: calc(100vh - 80px);
+}
+
+/* style={{ marginTop: '10px', paddingTop:'20px', borderTop: "3px solid #9195B5", borderShadow : "0 1px 1px #9195B6",  borderRadius:"3px"}} */
+/* marginTop: '10px', padding:'15px 10px', borderTop: "", boxShadow : "0 1px 1px #9195B6",  borderRadius:"3px" */
+.repnotes-form {
+    margin-top: 10px;
+    padding: 15px 10px;
+    border-top: 3px solid #9195B5;
+    box-shadow: 0 1px 1px #9195B6;
+    border-radius: 3px;
+}
+
+.ck-rounded-corners .ck.ck-balloon-panel, .ck.ck-balloon-panel .ck-rounded-corners {
+  z-index: 9999;
+}
+
+.MuiBox-root .materialui-daterange-picker-makeStyles-dateRangePicker-2 {
+    z-index: 1000;
+}
+
+.materialui-daterange-picker-makeStyles-dateRangePicker-2 >.MuiPaper-root {
+    position: absolute;
+}
